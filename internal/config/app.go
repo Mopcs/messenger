@@ -14,7 +14,7 @@ func loadHTTP() (HTTP, error) {
 	}
 
 	return HTTP{
-		Host: getEnv("HTTP_HOST", "0.0.0.0"),
+		Host: getEnv("HTTP_HOST", "localhost"),
 		Port: port,
 	}, nil
 }
